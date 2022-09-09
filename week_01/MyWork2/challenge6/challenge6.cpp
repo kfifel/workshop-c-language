@@ -7,6 +7,6 @@ int main(){
 	
 	if ( a > 0 ) 	  printf("le nombre est positive");
 	else if ( a < 0 ) printf("le nombre est negative");	
-	else 		  printf("le nombre est NULL");
+	else 			  printf("le nombre est NULL");
 return 0;
 }
