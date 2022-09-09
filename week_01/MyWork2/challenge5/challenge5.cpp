@@ -10,7 +10,7 @@ int main()
     scanf("%d",&ans);
     
     mois = 12 ;
-    if ( ans % 4 == 0 || ans % 400 != 0 || ans % 100 != 0 ){
+    if ( ( ans % 4 == 0 && ans % 400 != 0 ) || ( ans % 100 != 0 ) ){
         jours = 366 ;
         heurs = jours*24 ;
         minuts= heurs *60 ;
