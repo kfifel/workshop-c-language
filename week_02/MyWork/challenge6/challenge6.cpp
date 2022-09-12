@@ -1,20 +1,17 @@
 #include<stdio.h>
 int main(){
-	int p, n, i, j;
+	int p,  i, j,k=0;
+	
 	printf("donner votre nombre : ");
 	scanf("%d", &p);
-	n = p;
-		for ( i = 3; i <= p; i++) {
-			for (j = 2; j < n; j++) {
-				if( n % j == 0) break;
-				else if( n % j != 0 ) {
-					printf ("|  %d  ", n);
-					break;
+	printf("| 1 ");
+		for ( i = 2; i <= p; i++) {
+			k=0;
+			for (j = 2; j < i; j++) {
+				if( i % j == 0) 
+				   k++;
 				}
+					if(!k)printf("|  %d ",i);
 			}
-			n--;
-		}
-		printf ("|  2  ");
-	
-return 0;
 }
+	
