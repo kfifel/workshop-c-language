@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 
-int f(int x);
+float f(float x);
 
 int main(){
 	float a= -15, b=-10, m;
@@ -18,6 +18,6 @@ int main(){
 return 0;
 }
 
-int f(int x) {
+float f(float x) {
 return pow(x,3)+12*pow(x, 2)+1;
 }
